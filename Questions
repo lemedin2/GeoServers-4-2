@@ -1,0 +1,45 @@
+#### Q1: What is the URL of the WMS GetCapabilities request?
+
+##### A: http://localhost:8080/geoserver/wms?request=getCapabilities
+
+#### Q2: What is the URL of the WFS GetCapabilities request?
+
+##### A: http://localhost:8080/geoserver/wcs?SERVICE=WCS&REQUEST=GetCapabilities&VERSION=2.0.1
+
+#### Q3: Submit a screenshot of your updated WFS Layer Preview
+
+##### A: 
+
+#### Q4: What does drawing order refer to? Which layer goes on `top`, the first or the last layer in the list?
+
+##### A: In the drawing order the last layer goes on top. 
+
+#### Q5: Submit a screenshot of the Layer Preview of the Spearfish Layer Group when sf:sfdem is listed as the 3rd layer.
+
+##### A: 
+
+#### Q6: What is the WMS url for the single-tiled request?
+
+##### A: http://localhost:8080/geoserver/wms?SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&FORMAT=image%2Fpng&TRANSPARENT=true&tiled=true&LAYERS=spearfish&exceptions=application%2Fvnd.ogc.se_inimage&tilesOrigin=589425.9342365642%2C4913959.224611808&WIDTH=256&HEIGHT=256&SRS=EPSG%3A26713&STYLES=&BBOX=596763.0185456537%2C4917644.894893624%2C597068.4243893311%2C4917950.300737301
+
+#### Q7: What is the WMS url for one of the tiled requests? What is the image size?
+
+##### A: 
+
+#### Q8: What is the URL of your coarse resolution sample of a WMTS url? What level does this tile refer to? Notice the differences. What are some of the fields that are unique to this url?
+
+##### A: 
+
+#### Q9: In the zoomed-out URL, what are the TileCol and TileRow?
+
+##### A: 
+
+#### Q10: In the zoomed-in URL, what are the TileCol and TileRow?
+
+##### A: 
+
+#### Q11: Why are they so different for the same location in the map?
+
+##### A: 
+
+#### Q12: Is there a difference in the TileMatrix? %3A is an HTML encoding for a colon, `:`.What does the number after EPSG:4326 mean?
