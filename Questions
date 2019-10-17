@@ -45,7 +45,7 @@
 
 ##### A: The tile coulms and rows reference individual tiles based on the level referenced. A higher level reference, or zoomed in image, will reference small tiles that have larger values because the image has been broken down to smaller elments. 
 
-#### Q12: Is there a difference in the TileMatrix? %3A is an HTML encoding for a colon, `:`.What does the number after EPSG:4326 mean?
+#### Q12: Is there a difference in the TileMatrix? %3A is an HTML encoding for a colon, `:`. What does the number after EPSG:4326 mean?
         
-##### A: The number after the ESPG: refers to the level or zoom level that the image is rendered in.           
+##### A: The number after the ESPG:4326 refers to the gridded reference system level.         
         
