@@ -24,22 +24,28 @@
 
 #### Q7: What is the WMS url for one of the tiled requests? What is the image size?
 
-##### A: 
-
+##### A: http://localhost:8080/geoserver/gwc/service/wmts?layer=spearfish&style=&tilematrixset=EPSG%3A4326&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A4326%3A13&TileCol=3468&TileRow=2074
+        The image size is 256x256.
+        
 #### Q8: What is the URL of your coarse resolution sample of a WMTS url? What level does this tile refer to? Notice the differences. What are some of the fields that are unique to this url?
 
-##### A: 
-
+##### A: http://localhost:8080/geoserver/gwc/service/wmts?layer=spearfish&style=&tilematrixset=EPSG%3A4326&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A4326%3A9&http://localhost:8080/geoserver/gwc/service/wmts?layer=spearfish&style=&tilematrixset=EPSG%3A4326&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A4326%3A9&TileCol=216&TileRow=129
+         This refers to level 9. 
+         The fields that are unique are the tile level reference and the tile colum and tile row information. 
+         
 #### Q9: In the zoomed-out URL, what are the TileCol and TileRow?
 
-##### A: 
+##### A: TileCol=216&TileRow=129
 
 #### Q10: In the zoomed-in URL, what are the TileCol and TileRow?
 
-##### A: 
+##### A: TileCol=888157&TileRow=530947
 
 #### Q11: Why are they so different for the same location in the map?
 
-##### A: 
+##### A: The tile coulms and rows reference individual tiles based on the level referenced. A higher level reference, or zoomed in image, will reference small tiles that have larger values because the image has been broken down to smaller elments. 
 
 #### Q12: Is there a difference in the TileMatrix? %3A is an HTML encoding for a colon, `:`.What does the number after EPSG:4326 mean?
+        
+##### A: The number after the ESPG: refers to the level or zoom level that the image is rendered in.           
+        
